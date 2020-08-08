@@ -1,0 +1,73 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.paragraph {
+  font-size: 17px;
+}
+
+.arrow {
+  transform: scale(0.9);
+  user-select: none;
+}
+
+.bg-pattern {
+  top: 1.6rem;
+  width: 21rem;
+}
+.bg-quote {
+  top: 55%;
+  width: 4rem;
+}
+.bg-curve {
+  bottom: -2rem;
+  left: -2rem;
+}
+
+.buttons {
+  top: 46%;
+  z-index: 99;
+}
+
+@media only screen and (min-width: 1024px) {
+  .bg-pattern {
+    top: 2rem;
+    right: 3rem;
+    width: 35rem;
+  }
+  .bg-quote {
+    top: 8rem;
+    left: 13rem;
+    width: 100%;
+  }
+
+  .photo {
+    width: 27rem;
+    top: 7%;
+    right: 5rem;
+  }
+
+  .paragraph {
+    font-size: 25.9px;
+  }
+
+  .quote {
+    top: 10rem;
+  }
+
+  .arrow {
+    transform: scale(1);
+  }
+
+  .buttons {
+    top: 31rem;
+    right: 34%;
+  }
+
+  .slick-list,
+  .slick-track {
+    height: 100%;
+  }
+}

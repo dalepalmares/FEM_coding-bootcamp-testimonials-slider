@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+  </head>
+  <body class="flex items-center justify-center h-screen font-inter">
+    <div
+      class="relative flex items-center justify-center overflow-hidden lg:h-screen"
+    >
+      <!-- Background Images -->
+      <div class="absolute bg-curve">
+        <img src="./images/pattern-curve.svg" alt="background curve" />
+      </div>
+      <div class="absolute bg-pattern">
+        <img src="./images/pattern-bg.svg" alt="background pattern" />
+      </div>
+      <div class="absolute bg-quote">
+        <img src="./images/pattern-quotes.svg" alt="background quotes" />
+      </div>
+      <div class="absolute flex buttons lg:shadow-2xl">
+        <!-- Prev Btn -->
+        <div
+          class="px-4 py-3 transition-all duration-100 ease-linear bg-white rounded-l-full cursor-pointer lg:py-4 lg:px-5 hover:bg-gray-300 prev-btn"
+        >
+          <div class="arrow">
+            <img src="./images/icon-prev.svg" alt="prev" />
+          </div>
+        </div>
+
+        <!-- Next Btn -->
+        <div
+          class="px-4 py-3 transition-all duration-100 ease-linear bg-white rounded-r-full cursor-pointer lg:py-4 lg:px-5 hover:bg-gray-300 next-btn"
+        >
+          <div class="arrow">
+            <img src="./images/icon-next.svg" alt="next" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-row items-center max-w-sm p-10 lg:max-w-6xl lg:h-screen slider"
+      >
+        <!-- First Quote -->
+        <div
+          class="relative lg:flex lg:flex-row-reverse lg:justify-center lg:h-full"
+        >
+          <div
+            class="relative flex flex-col items-center p-5 lg:p-0 lg:absolute photo"
+          >
+            <img
+              class="rounded-md shadow-2xl"
+              src="./images/image-tanya.jpg"
+              alt="image 1"
+            />
+          </div>
+
+          <div
+            class="relative flex flex-col items-center mt-16 lg:items-start lg:px-24 lg:justify-between quote lg:mt-0"
+          >
+            <p
+              class="font-light text-center paragraph text-darkBlue lg:max-w-lg lg:text-left"
+            >
+              “ I’ve been interested in coding for a while but never taken the
+              jump, until now. I couldn’t recommend this course enough. I’m now
+              in the job of my dreams and so excited about the future. ”
+            </p>
+            <div class="lg:flex lg:flex-row lg:items-end lg:mt-3">
+              <h3
+                class="mt-4 text-sm font-bold text-center text-darkBlue lg:text-left lg:text-lg"
+              >
+                Tanya Sinclair
+              </h3>
+              <p
+                class="text-sm text-center text-grayBlue lg:text-left lg:text-base lg:ml-3"
+              >
+                UX Engineer
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Quote -->
+        <div
+          class="relative lg:flex lg:flex-row-reverse lg:justify-center lg:h-full"
+        >
+          <div
+            class="relative flex flex-col items-center p-5 lg:p-0 lg:absolute photo"
+          >
+            <img
+              class="rounded-md shadow-2xl"
+              src="./images/image-john.jpg"
+              alt="image 1"
+            />
+          </div>
+
+          <div
+            class="relative flex flex-col items-center mt-16 lg:items-start lg:px-24 lg:justify-between quote lg:mt-0"
+          >
+            <p
+              class="font-light text-center paragraph text-darkBlue lg:max-w-lg lg:text-left"
+            >
+              “ If you want to lay the best foundation possible I’d recommend
+              taking this course. The depth the instructors go into is
+              incredible. I now feel so confident about starting up as a
+              professional developer. ”
+            </p>
+            <div class="lg:flex lg:flex-row lg:items-end lg:mt-3">
+              <h3
+                class="mt-4 text-sm font-bold text-center text-darkBlue lg:text-left lg:text-lg"
+              >
+                John Tarkpor
+              </h3>
+              <p
+                class="text-sm text-center text-grayBlue lg:text-left lg:text-base lg:ml-3"
+              >
+                Junior Front-end Developer
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="absolute bottom-0 w-full text-xs text-center">
+      Challenge by
+      <a
+        class="text-links"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        class="text-links"
+        href="https://twitter.com/daley_tweet"
+        target="_blank"
+        >Dale Palmares</a
+      >.
+    </footer>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
